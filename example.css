@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&display=swap");
+
+:root {
+  --color-secondary: #263238;
+
+  --info-color:#2194F3;
+
+  --color-white: #fff;
+
+  --color-gray: #f1f1f1;
+
+  --color-primary: #28CB8B;
+  
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0rem 1.5rem;
+}
+
+.my_nav_bar {
+  width: 100%;
+  height: 8rem;
+  background-color: var(--color-white);
+}
+.nav_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_logo {
+  font-size: 2.8rem;
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+.nav_list {
+  list-style: none;
+  display: flex;
+}
+.my_nav {
+  margin: 0rem 0.7rem;
+}
+.nav_link {
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+}
+.nav_btn {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  padding: 1rem 1.5rem;
+  color: var(--color-white);
+  border-radius: 0.6rem;
+}
+.header {
+  width: 100%;
+  height: calc(100vh - 10rem);
+  background-color: var(--color-gray);
+}
+.header_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.my_header_container_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header_text {
+  width: 70%;
+}
+.header_img {
+  width: 30%;
+}
+.header_title {
+  font-size: 5.3rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  line-height: 6.3rem;
+}
+.header_title > span {
+  color: var(--color-primary);
+}
+.header_text {
+  color: var(--color-secondary);
+  margin: 2rem 0rem;
+}
+.header_btn {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  margin-top: 2.1rem;
+  letter-spacing: 1.2px;
+  border-radius: 0.4rem;
+  padding: 1rem 2.1rem;
+}
+.section {
+  padding-top: 10rem;
+}
+.icon_container {
+  text-align: center;
+}
+.section_header {
+  margin-bottom: 5rem;
+}
+.section_title {
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+.section_text {
+  color: var(--color-secondary);
+}
+.icon_wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: max-content;
+}
+.icon_wrapper > span {
+  text-align: center;
+}
+.services_container {
+  text-align: center;
+}
+.services {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  grid-gap: 4rem;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+.service {
+  padding: 1.5rem 0.4rem;
+  box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.144);
+}
+.service_title {
+  color: var(--color-secondary);
+  margin: 1rem 0rem;
+}
+.service_text {
+  color: var(--color-secondary);
+}
+.footer {
+  padding: 10rem;
+  background-color: var(--color-secondary);
+}
+.footer_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-gap: 1rem;
+}
+.footer_logo {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+.footer_item_title {
+  color: var(--color-white);
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.footer_copy {
+  margin: 2rem 0.1rem;
+  font-size: 2rem;
+  color: var(--color-white);
+}
+
+.footer_company_list {
+  margin-top: 2rem;
+  list-style: none;
+}
+
+.footer_company{
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 2rem;
+  margin: 0.5rem 0.1rem;
+}
+.my_phone_nav_list {
+  display: none;
+}
+.my_phone_nav_list {
+  list-style: none;
+}
+.my_phone_nav_item {
+  margin: 1.5rem 1rem;
+}
+.my_phone_nav_link {
+  padding: 1rem 0.18rem;
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+.mu_phone_nav_item_last {
+  margin-bottom: 2rem ;
+}
+@media only screen and (max-width: 350px) {
+  .header_title {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+  .header_text {
+    width: 100%;
+  }
+  .header_img {
+    display: none;
+  }
+}
